@@ -19,3 +19,10 @@ a {
   padding: 0 30px;
   text-align: left;
 }
+
+
+@media (max-width: 425px) {
+  .container {
+    padding: 0 18px;
+  }
+}

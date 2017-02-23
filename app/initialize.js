@@ -7,4 +7,8 @@ $(document).ready(() => {
     $('body').animate({scrollTop: $(el).offset().top}, 500);
   });
 
+  $(window).on("scroll", () => {
+    let fromTop = $("body").scrollTop();
+    $('.sticky-header').toggleClass("sticky", (fromTop > 579));
+  });
 });
